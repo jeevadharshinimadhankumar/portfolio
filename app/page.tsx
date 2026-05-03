@@ -277,8 +277,8 @@ export default function Home() {
 
       <footer id="contact" className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
         <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
-          <div className="grid gap-8 lg:grid-cols-3">
-            <div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="lg:col-span-2">
               <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Get in touch</p>
               <h2 className="mt-3 text-3xl font-semibold text-white">Work with me</h2>
               <p className="mt-4 text-sm leading-6 text-slate-300">I’m open to data engineering and cloud roles. Let’s build scalable systems, modern pipelines, and production-ready analytics together.</p>
@@ -292,6 +292,11 @@ export default function Home() {
             <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
               <p className="text-sm uppercase tracking-[0.24em] text-slate-400">GitHub</p>
               <a href="https://github.com/jeevadharshinimadhan" className="mt-3 block text-base text-sky-300 hover:text-sky-200">github.com/jeevadharshinimadhan</a>
+            </div>
+
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-400">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/jeevadharshini-madhankumar-8152953b8" className="mt-3 block text-base text-sky-300 hover:text-sky-200">linkedin.com/in/jeevadharshini-madhankumar-8152953b8</a>
             </div>
           </div>
 

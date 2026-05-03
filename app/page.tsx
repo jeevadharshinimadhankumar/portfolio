@@ -55,8 +55,8 @@ export default function Home() {
         <span className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-200">Jeevadharshini</span>
         <div className="flex items-center gap-6 text-sm text-slate-300">
           <a href="#home" className="transition hover:text-sky-300">Home</a>
+          <a href="#resume" className="transition hover:text-sky-300">Resume</a>
           <a href="#featured" className="transition hover:text-sky-300">Projects</a>
-          <a href="#skills" className="transition hover:text-sky-300">Skills</a>
           <a href="#blogs" className="transition hover:text-sky-300">Blogs</a>
           <a href="#contact" className="transition hover:text-sky-300">Contact</a>
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
                   Jeevadharshini
                 </h1>
                 <p className="text-lg leading-8 text-slate-300">
-                  Building modern data platforms with AWS, Python, SQL, Spark and real-time processing. I design scalable pipelines, clean data orchestration and production-grade analytics solutions.
+                  I build modern data platforms with AWS, Python, SQL, Spark and real-time processing. My focus is scalable pipelines, clean orchestration, and data systems that empower analytics teams.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a href="/resume.pdf" download className="rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-400">
@@ -88,23 +88,33 @@ export default function Home() {
                     GitHub Profile
                   </a>
                 </div>
-                <a href="#featured" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 transition hover:text-sky-300">
-                  <span>Scroll to projects</span>
-                  <span className="animate-bounce text-sky-300">↓</span>
-                </a>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="rounded-3xl bg-slate-950/80 p-4 text-sm text-slate-300 border border-white/10">
+                    <p className="text-sky-300">Experience</p>
+                    <p className="mt-2 text-lg text-white">4+ years in data engineering</p>
+                  </div>
+                  <div className="rounded-3xl bg-slate-950/80 p-4 text-sm text-slate-300 border border-white/10">
+                    <p className="text-sky-300">Tools</p>
+                    <p className="mt-2 text-lg text-white">AWS, Spark, Kafka</p>
+                  </div>
+                  <div className="rounded-3xl bg-slate-950/80 p-4 text-sm text-slate-300 border border-white/10">
+                    <p className="text-sky-300">Outcome</p>
+                    <p className="mt-2 text-lg text-white">Reliable production datasets</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
               <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-900/75 p-6 shadow-xl shadow-slate-950/30 backdrop-blur-xl">
                 <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Focus</p>
-                <h2 className="mt-4 text-2xl font-semibold text-white">Real-time analytics</h2>
-                <p className="mt-3 text-sm leading-6 text-slate-300">Designing event-driven ingestion and transformation for fast-moving data.</p>
+                <h2 className="mt-4 text-2xl font-semibold text-white">Streaming & lakehouse</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">Real-time ingestion, schema evolution, and an analytics-ready data lake foundation.</p>
               </motion.div>
               <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-900/75 p-6 shadow-xl shadow-slate-950/30 backdrop-blur-xl">
                 <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Impact</p>
-                <h2 className="mt-4 text-2xl font-semibold text-white">Data-first cloud systems</h2>
-                <p className="mt-3 text-sm leading-6 text-slate-300">Building pipelines that keep data accurate, available, and ready for analytics.</p>
+                <h2 className="mt-4 text-2xl font-semibold text-white">Data reliability</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">Monitoring, validation, and resilient workflows that reduce pipeline failures.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -118,10 +128,10 @@ export default function Home() {
             <div className="flex items-center justify-between gap-4">
               <div>
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Interactive Skills</p>
-                <h3 className="mt-3 text-3xl font-semibold text-white">Click a skill to reveal mastery</h3>
+                <h3 className="mt-3 text-3xl font-semibold text-white">Click to learn my strengths</h3>
               </div>
               <div className="rounded-3xl border border-sky-400/20 bg-slate-950/60 px-4 py-2 text-sm text-sky-200">
-                Click to explore
+                Click to expand
               </div>
             </div>
 
@@ -191,6 +201,49 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="resume" className="relative z-10 mx-auto max-w-7xl px-6 pb-16">
+        <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Resume</p>
+              <h2 className="mt-3 text-3xl font-semibold text-white">Professional summary and top skills</h2>
+            </div>
+            <a href="/resume.pdf" download className="rounded-full border border-sky-500/20 bg-sky-500/10 px-4 py-2 text-sm text-sky-300 transition hover:bg-sky-500/20 hover:text-white">
+              Download Resume
+            </a>
+          </div>
+
+          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <h3 className="text-xl font-semibold text-white">Resume Highlights</h3>
+              <ul className="mt-4 space-y-3 text-sm text-slate-400">
+                <li>● Designed and deployed scalable ETL pipelines on AWS</li>
+                <li>● Built real-time data ingestion with Kafka and Spark</li>
+                <li>● Implemented Airflow orchestration and monitoring</li>
+              </ul>
+            </div>
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <h3 className="text-xl font-semibold text-white">Key Technologies</h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span key={skill.name} className="rounded-full bg-slate-900/80 px-3 py-2 text-xs uppercase tracking-[0.18em] text-slate-300">
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <h3 className="text-xl font-semibold text-white">Career Impact</h3>
+              <ul className="mt-4 space-y-3 text-sm text-slate-400">
+                <li>● Reduced data latency and improved pipeline reliability</li>
+                <li>● Delivered dashboards and analytics-ready datasets</li>
+                <li>● Collaborated across engineering and BI teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="featured" className="relative z-10 mx-auto max-w-7xl px-6 pb-16">
         <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
@@ -203,7 +256,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+          <div className="mt-8 grid gap-6 lg:grid-cols-2 xl:grid-cols-2">
             <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
               <h3 className="text-xl font-semibold text-white">Real-time Data Pipeline</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">Built a scalable pipeline with Apache Kafka and Spark Streaming to process millions of events daily with sub-minute latency.</p>
@@ -308,4 +361,3 @@ export default function Home() {
     </main>
   );
 }
-

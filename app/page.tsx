@@ -57,6 +57,7 @@ export default function Home() {
           <a href="#home" className="transition hover:text-sky-300">Home</a>
           <a href="#featured" className="transition hover:text-sky-300">Projects</a>
           <a href="#skills" className="transition hover:text-sky-300">Skills</a>
+          <a href="#blogs" className="transition hover:text-sky-300">Blogs</a>
           <a href="#contact" className="transition hover:text-sky-300">Contact</a>
         </div>
       </nav>
@@ -222,6 +223,54 @@ export default function Home() {
                 <li>● SLA-driven monitoring and alerts</li>
               </ul>
             </motion.div>
+
+            <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <h3 className="text-xl font-semibold text-white">Cloud Data Lake Modernization</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-300">Modernized a shared data lake using AWS S3, Glue, and Lake Formation for faster query performance and governance.</p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-400">
+                <li>● Centralized data access controls</li>
+                <li>● Optimized Parquet storage for analytics</li>
+                <li>● Enabled self-service BI reporting</li>
+              </ul>
+            </motion.div>
+
+            <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <h3 className="text-xl font-semibold text-white">Automated Data Quality Platform</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-300">Implemented automated validation and monitoring for ETL jobs, reducing data incidents and improving trust across analytics teams.</p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-400">
+                <li>● Built regression checks and alerts</li>
+                <li>● Reported quality metrics to stakeholders</li>
+                <li>● Integrated with CI/CD for pipeline reliability</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blogs" className="relative z-10 mx-auto max-w-7xl px-6 pb-16">
+        <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Medium Blog</p>
+              <h2 className="mt-3 text-3xl font-semibold text-white">Recent articles and technical posts</h2>
+            </div>
+            <a href="https://medium.com/@jeevadharshini" target="_blank" rel="noreferrer" className="rounded-full border border-sky-500/20 bg-sky-500/10 px-4 py-2 text-sm text-sky-300 transition hover:bg-sky-500/20 hover:text-white">
+              Visit Medium
+            </a>
+          </div>
+
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <span className="text-sm uppercase tracking-[0.24em] text-slate-400">Data engineering</span>
+              <h3 className="mt-4 text-xl font-semibold text-white">How to scale Spark jobs with partition-aware architectures</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-300">A practical guide to tuning Spark workloads, avoiding skew, and designing partition-aware data processing pipelines.</p>
+            </motion.div>
+
+            <motion.div whileHover={{ y: -6 }} className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
+              <span className="text-sm uppercase tracking-[0.24em] text-slate-400">Cloud analytics</span>
+              <h3 className="mt-4 text-xl font-semibold text-white">Building production-ready ETL workflows with Apache Airflow</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-300">Stories and best practices for scheduling, monitoring, and recovering complex data pipelines in Airflow.</p>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -241,8 +290,8 @@ export default function Home() {
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/70 p-6">
-              <p className="text-sm uppercase tracking-[0.24em] text-slate-400">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/jeevadharshini-madhankumar-8152953b8" className="mt-3 block text-base text-sky-300 hover:text-sky-200">linkedin.com/in/jeevadharshini-madhankumar-8152953b8</a>
+              <p className="text-sm uppercase tracking-[0.24em] text-slate-400">GitHub</p>
+              <a href="https://github.com/jeevadharshinimadhan" className="mt-3 block text-base text-sky-300 hover:text-sky-200">github.com/jeevadharshinimadhan</a>
             </div>
           </div>
 
